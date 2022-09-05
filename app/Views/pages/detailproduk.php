@@ -30,22 +30,22 @@
             </div>
             <div class="col-lg-3 my-2">
                 <h4 class="mb-5">Daftar Lelang Sekarang</h4>
-                <p>
-                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                    Kirim notifikasi JSS untuk informasi terkait paket lelang ini
-                </p>
-                <p>
-                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                    Saya menyetujui syarat dan ketentuan.
-                    <a href="#">Baca syarat dan ketentuan</a>
-                </p>
-                <div class="text-center">
-                    <a href="<?= base_url('daftar-lelang'); ?>">
-                        <button type="button" class="btn btn-primary">
-                            Daftar Lelang
-                        </button>
-                    </a>
-                </div>
+                <form id="daftar-form" action="<?= base_url('daftar-lelang') ?>">
+                    <p>
+                        <input class="form-check-input me-1" type="checkbox" value="" required>
+                        Kirim notifikasi JSS untuk informasi terkait paket lelang ini
+                    </p>
+                    <p>
+                        <input class="form-check-input me-1" type="checkbox" value="" required>
+                        Saya menyetujui syarat dan ketentuan.
+                        <a href="#">Baca syarat dan ketentuan</a>
+                    </p>
+                    <div class="text-center">
+                        <div class="text-center">
+                            <button type="submit" onclick="submitBtn()" class="btn btn-primary">Daftar Lelang</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

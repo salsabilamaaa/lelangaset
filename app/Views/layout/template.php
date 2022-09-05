@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
+    <!-- <link rel="stylesheet" href="../dropify/dist/js/dropify.js">
+    <link rel="stylesheet" type="text/css" href="../dist/css/dropify.css">
+    <link rel="stylesheet" href="../dist/fonts/*"> -->
+
     <style>
         body,
         nav,
@@ -70,6 +74,19 @@
             width: auto;
             height: 250px;
         }
+
+        label.error {
+            color: red;
+            font-size: 1rem;
+            display: block;
+            margin-top: 5px;
+        }
+
+        input.error {
+            border: 1px dashed red;
+            font-weight: 300;
+            color: red;
+        }
     </style>
 </head>
 
@@ -81,6 +98,9 @@
     <?= $this->include('layout/footer'); ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="../asset/js/form-validation.js"></script> -->
 </body>
 
 </html>

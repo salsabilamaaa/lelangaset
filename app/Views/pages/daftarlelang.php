@@ -34,10 +34,10 @@
             <div class="col-lg-8 my-5 mx-auto">
                 <h2 class="mb-4">Daftar Paket Lelang</h2>
                 <p>Anda belum terdaftar paket lelang ini, silakan cek kembali data dibawah sebelum daftar lelang.</p>
-                <form>
+                <form id="registrasi-form" action="<?= base_url('pembayaran'); ?>" method="">
                     <div class="mb-3">
-                        <label for="inputNama" class="form-label txt-md">Nama</label>
-                        <input type="text" class="form-control" id="inputNama" placeholder="Nama Pengguna" disabled>
+                        <label for="nama" class="form-label txt-md">Nama</label>
+                        <input type="text" class="form-control" id="nama" placeholder="Nama Pengguna" disabled>
                     </div>
                     <div class="mb-3">
                         <label for="kodeRegistrasi" class="form-label txt-md">Kode Registrasi</label>
@@ -49,8 +49,8 @@
                     </div>
                     <div class="mb-3">
                         <label for="selectBank" class="form-label txt-md">Bank</label>
-                        <select class="form-select form-select-md" id="selectBank" aria-label=".form-select-lg example">
-                            <option selected>Pilih Bank</option>
+                        <select class="form-select form-select-md" id="selectBank" aria-label=".form-select-lg example" aria-placeholder="Pilih Bank" required>
+                            <option value="" disable selected>Pilih Bank</option>
                             <option value="1">BRI</option>
                             <option value="2">BNI</option>
                             <option value="3">Mandiri</option>
@@ -59,13 +59,11 @@
                     </div>
                     <div class="mb-4">
                         <label for="noRekening" class="form-label txt-md">Nomor Rekening</label>
-                        <input type="text" class="form-control" id="noRekening" aria-describedby="rekeningDesc">
+                        <input type="text" class="form-control" id="noRekening" aria-describedby="rekeningDesc" required>
                         <div id="rekeningDesc" class="form-text">Nomor rekening digunakan untuk pengembalian. Pastikan nomor rekening benar.</div>
                     </div>
                     <div class="text-center">
-                        <a href="<?= base_url('pembayaran'); ?>">
-                            <button type="button" class="btn btn-primary">Daftar Lelang</button>
-                        </a>
+                        <button type="submit" onclick="submitBtn()" class="btn btn-primary">Daftar Lelang</button>
                     </div>
                 </form>
             </div>
@@ -111,5 +109,13 @@
         <!-- Modal Preview Image -->
     </div>
 </main>
+
+<script>
+    function submitBtn() {
+        $(document).ready(function() {
+            $("#registrasi-form").validate();
+        });
+    }
+</script>
 
 <?= $this->endSection(); ?>

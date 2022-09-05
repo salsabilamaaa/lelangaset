@@ -34,7 +34,7 @@
             <div class="col-lg-8 my-4 mx-auto">
                 <h4 class="txt-bold">Unggah Bukti Jaminan</h4>
                 <p>Anda sudah terdaftar paket lelang ini, silahkan unggah bukti transfer uang jaminan. Cek kembali data dibawah sebelum disubmit.</p>
-                <form action="<?= current_url() ?>" method="POST" enctype="multipart/form-data">
+                <form action="<?= base_url('lelang-saya') ?>" method="" enctype="multipart/form-data">
                     <div class="form-group mb-3">
                         <label for="inputNama" class="form-label txt-md">Nama</label>
                         <input type="text" class="form-control" id="inputNama" placeholder="Nama Pengguna" disabled>
@@ -58,20 +58,20 @@
                     </div>
                     <div class="form-group mb-3">
                         <label for="nomorBukti" class="form-label txt-md">Nomor Bukti Transfer</label>
-                        <input type="text" class="form-control" id="nomorBukti" placeholder="12341245134512">
+                        <input type="text" class="form-control" id="nomorBukti" placeholder="12341245134512" required>
                     </div>
                     <div class="form-group mb-3">
                         <label for="formFile" class="form-label txt-md">Unggah Bukti</label>
-                        <input class="form-control" type="file" id="formFile" name="bukti">
+                        <input class="form-control" type="file" id="formFile" name="bukti" required>
                         <?php if (session()->has('success')) : ?>
                             <div class="form-text"><?= session()->getFlashdata('success'); ?></div>
                         <?php endif; ?>
                         <img id='img-upload' />
                     </div>
                     <div class="text-center">
-                        <a href="<?= base_url('lelang-saya'); ?>">
-                            <button type="button" class="btn btn-primary">Unggah Bukti</button>
-                        </a>
+                        <div class="text-center">
+                            <button type="submit" onclick="submitBtn()" class="btn btn-primary">Simpan Bukti</button>
+                        </div>
                     </div>
                 </form>
             </div>

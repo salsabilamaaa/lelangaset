@@ -38,7 +38,7 @@ $routes->setAutoRoute(false);
 $routes->get('/', 'Controller::index');
 $routes->get('lelang-saya', 'Controller::lelang_saya');
 $routes->get('detail-produk', 'Controller::detail_produk');
-$routes->get('daftar-lelang', 'Controller::daftar_lelang');
+$routes->match(['GET', 'POST'], 'daftar-lelang', 'Controller::daftar_lelang');
 $routes->get('pembayaran', 'Controller::payment');
 $routes->match(['GET', 'POST'], 'unggah-bukti', 'Controller::upload_bukti');
 $routes->get('profil', 'Controller::profil');

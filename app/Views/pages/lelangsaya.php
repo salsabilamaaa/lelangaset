@@ -169,7 +169,7 @@
                     </div>
 
                     <div class="card mb-3">
-                        <a href="<?= base_url('hasil-lelang'); ?>" class="stretched-link"></a>
+                        <a href="<?= base_url('unggah-bukti'); ?>" class="stretched-link"></a>
                         <div class="card-body">
                             <div class="row justify-content-between">
                                 <div class="col-lg-3 text-center">
@@ -199,7 +199,7 @@
                                     <div class="status-box-red rounded mb-4">
                                         <p class="p-2 txt-md text-center">Ditolak</p>
                                     </div>
-                                    <p>Anda berhasil mendaftar pelelangan</p>
+                                    <p>Gambar bukti transfer tidak jelas, silahkan unggah kembali</p>
                                 </div>
                             </div>
                         </div>
