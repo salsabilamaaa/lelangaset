@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Models\BuktiModel;
+
 class Controller extends BaseController
 {
     public function index()
@@ -17,6 +19,10 @@ class Controller extends BaseController
         $data = [
             'title' => 'Lelang Saya | Lelang Aset Kota Jogja'
         ];
+
+        // $this->Bukti_Model->save([
+        //     'gambar' => $this->request->getVar('gambar')
+        // ]);
         return view('pages/lelangsaya', $data);
     }
 

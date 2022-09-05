@@ -18,7 +18,7 @@
             <div class="tab-pane fade show active" id="berlangsung-tab-pane" role="tabpanel" aria-labelledby="berlangsung-tab" tabindex="0">
                 <div class="container">
                     <div class="card mb-3">
-                        <a href="<?= base_url('pelelangan'); ?>" class="stretched-link"></a>
+                        <a href="<?= base_url('unggah-bukti'); ?>" class="stretched-link"></a>
                         <div class="card-body">
                             <div class="row justify-content-between">
                                 <div class="col-lg-3 text-center">
@@ -48,7 +48,7 @@
                                     <div class="status-box-yellow rounded mb-4">
                                         <p class="p-2 txt-md text-center">Unggah Bukti</p>
                                     </div>
-                                    <p>Anda berhasil mendaftar pelelangan</p>
+                                    <p>Silahkan unggah bukti pembayaran jaminan</p>
                                 </div>
                             </div>
                         </div>
@@ -85,7 +85,7 @@
                                     <div class="status-box-green rounded mb-4">
                                         <p class="p-2 txt-md text-center">Penawaran</p>
                                     </div>
-                                    <p>Anda berhasil mendaftar pelelangan</p>
+                                    <p>Dokumen Anda sudah diverifikasi. Anda dapat melanjutkan penawaran</p>
                                 </div>
                             </div>
                         </div>
@@ -96,7 +96,7 @@
                         <div class="card-body">
                             <div class="row justify-content-between">
                                 <div class="col-lg-3 text-center">
-                                    <img src="../asset/image/item-1.jpg" class="rounded" style="object-fit: cover; width: 250px; height: 250px" alt="Kursi">
+                                    <img src="/asset/image/item-1.jpg" class="rounded" style="object-fit: cover; width: 250px; height: 250px" alt="Kursi">
                                 </div>
                                 <div class="col-lg-5">
                                     <h5 class="txt-bold my-3">Kursi</h5>
@@ -122,7 +122,7 @@
                                     <div class="status-box-blue rounded mb-4">
                                         <p class="p-2 txt-md text-center">Menunggu Lelang Berakhir</p>
                                     </div>
-                                    <p>Anda berhasil mendaftar pelelangan</p>
+                                    <p>Anda berhasil melakukan penawaran. Tunggu hingga lelang berakhir atau lakukan penawaran kembali</p>
                                 </div>
                             </div>
                         </div>
@@ -136,7 +136,7 @@
                         <div class="card-body">
                             <div class="row justify-content-between">
                                 <div class="col-lg-3 text-center">
-                                    <img src="../asset/image/item-2.jpg" class="rounded" style="object-fit: cover; width: 250px; height: 250px" alt="Kursi">
+                                    <img src="/asset/image/item-2.jpg" class="rounded" style="object-fit: cover; width: 250px; height: 250px" alt="Kursi">
                                 </div>
                                 <div class="col-lg-5">
                                     <h5 class="txt-bold my-3">Kursi</h5>
@@ -173,7 +173,7 @@
                         <div class="card-body">
                             <div class="row justify-content-between">
                                 <div class="col-lg-3 text-center">
-                                    <img src="../asset/image/item-3.jpg" class="rounded" style="object-fit: cover; width: 250px; height:250px" alt="Kursi">
+                                    <img src="/asset/image/item-3.jpg" class="rounded" style="object-fit: cover; width: 250px; height:250px" alt="Kursi">
                                 </div>
                                 <div class="col-lg-5">
                                     <h5 class="txt-bold my-3">Kursi</h5>

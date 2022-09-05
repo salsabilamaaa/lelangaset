@@ -29,10 +29,13 @@
                 <p>Deskripsi barang</p>
             </div>
             <div class="col-lg-3 my-2">
+                <div class="status-box-blue rounded mb-4">
+                    <p class="p-2 txt-md text-center">Anda belum daftar paket lelang ini</p>
+                </div>
                 <h4 class="mb-5">Daftar Lelang Sekarang</h4>
                 <form id="daftar-form" action="<?= base_url('daftar-lelang') ?>">
                     <p>
-                        <input class="form-check-input me-1" type="checkbox" value="" required>
+                        <input class="form-check-input me-1" type="checkbox" value="">
                         Kirim notifikasi JSS untuk informasi terkait paket lelang ini
                     </p>
                     <p>

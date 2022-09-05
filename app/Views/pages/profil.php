@@ -22,7 +22,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="pekerjaan" class="form-label txt-md">Pekerjaan</label>
-                    <input type="text" class="form-control" id="pekerjaan" placeholder="Pegawai">
+                    <input type="text" class="form-control" id="pekerjaan" placeholder="Pegawai, Mahasiswa">
                 </div>
                 <div class="mb-3">
                     <label for="selectBank" class="form-label txt-md">Bank</label>
@@ -50,15 +50,15 @@
             <h4 class="txt-bold mb-4">Unggah Dokumen</h4>
             <div class="mb-3">
                 <label for="formFile" class="form-label txt-md">Unggah KTP</label>
-                <input class="form-control" type="file" id="formFile">
+                <input class="dropify" type="file" id="formFile" data-allowed-file-extensions="jpg jpeg png" aria-describedby="KTPDesc">
 
-                <img id='img-upload' />
+                <div id="KTPDesc" class="form-text">Unggah foto KTP Anda</div>
             </div>
             <div class="mb-3">
                 <label for="formFile" class="form-label txt-md">Unggah NPWP</label>
-                <input class="form-control" type="file" id="formFile">
+                <input class="dropify" type="file" id="formFile" data-allowed-file-extensions="jpg jpeg png" aria-describedby="NPWPDesc">
 
-                <img id='img-upload' />
+                <div id="NPWPDesc" class="form-text">Unggah foto kartu NPWP Anda</div>
             </div>
         </div>
     </div>

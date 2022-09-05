@@ -35,6 +35,7 @@
                 <h4 class="txt-bold">Unggah Bukti Jaminan</h4>
                 <p>Anda sudah terdaftar paket lelang ini, silahkan unggah bukti transfer uang jaminan. Cek kembali data dibawah sebelum disubmit.</p>
                 <form action="<?= base_url('lelang-saya') ?>" method="" enctype="multipart/form-data">
+                    <?= csrf_field(); ?>
                     <div class="form-group mb-3">
                         <label for="inputNama" class="form-label txt-md">Nama</label>
                         <input type="text" class="form-control" id="inputNama" placeholder="Nama Pengguna" disabled>
@@ -62,11 +63,7 @@
                     </div>
                     <div class="form-group mb-3">
                         <label for="formFile" class="form-label txt-md">Unggah Bukti</label>
-                        <input class="form-control" type="file" id="formFile" name="bukti" required>
-                        <?php if (session()->has('success')) : ?>
-                            <div class="form-text"><?= session()->getFlashdata('success'); ?></div>
-                        <?php endif; ?>
-                        <img id='img-upload' />
+                        <input class="dropify" type="file" id="formFile" name="bukti" data-allowed-file-extensions="jpg png jpeg" required>
                     </div>
                     <div class="text-center">
                         <div class="text-center">
@@ -119,41 +116,41 @@
 </main>
 
 <script>
-    $(document).ready(function() {
-        $(document).on('change', '.btn-file :file', function() {
-            var input = $(this),
-                label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
-            input.trigger('fileselect', [label]);
-        });
+    // $(document).ready(function() {
+    //     $(document).on('change', '.btn-file :file', function() {
+    //         var input = $(this),
+    //             label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+    //         input.trigger('fileselect', [label]);
+    //     });
 
-        $('.btn-file :file').on('fileselect', function(event, label) {
+    //     $('.btn-file :file').on('fileselect', function(event, label) {
 
-            var input = $(this).parents('.input-group').find(':text'),
-                log = label;
+    //         var input = $(this).parents('.input-group').find(':text'),
+    //             log = label;
 
-            if (input.length) {
-                input.val(log);
-            } else {
-                if (log) alert(log);
-            }
+    //         if (input.length) {
+    //             input.val(log);
+    //         } else {
+    //             if (log) alert(log);
+    //         }
 
-        });
+    //     });
 
-        function readURL(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
+    //     function readURL(input) {
+    //         if (input.files && input.files[0]) {
+    //             var reader = new FileReader();
 
-                reader.onload = function(e) {
-                    $('#img-upload').attr('src', e.target.result);
-                }
+    //             reader.onload = function(e) {
+    //                 $('#img-upload').attr('src', e.target.result);
+    //             }
 
-                reader.readAsDataURL(input.files[0]);
-            }
-        }
+    //             reader.readAsDataURL(input.files[0]);
+    //         }
+    //     }
 
-        $("#imgInp").change(function() {
-            readURL(this);
-        });
-    });
+    //     $("#imgInp").change(function() {
+    //         readURL(this);
+    //     });
+    // });
 </script>
 <?= $this->endSection(); ?>
