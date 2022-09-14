@@ -2,10 +2,12 @@
 
 <?= $this->section('content'); ?>
 
+<br><br>
+
 <main class="container-fluid">
-    <div class="row my-4">
+    <div class="row my-4 mt-5">
         <!-- Profil -->
-        <div class="container col-lg-6 my-3 mx-auto">
+        <div class=" container col-lg-6 my-3 mx-auto">
             <h4 class="txt-bold mb-4">Data Profil</h4>
             <form>
                 <div class="mb-3">

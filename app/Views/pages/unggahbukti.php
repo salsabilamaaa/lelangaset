@@ -2,8 +2,10 @@
 
 <?= $this->section('content'); ?>
 
+<br><br>
+
 <main class="container-fluid">
-    <div class="m-4">
+    <div class="m-4 mt-5">
         <div class="row justify-content-between">
             <!-- Info Paket -->
             <div class="d-none d-lg-block col-lg-3 mx-auto">
@@ -21,7 +23,7 @@
                         <p>Rp. 300.000</p>
                     </div>
                     <div class="d-flex justify-content-between">
-                        <p class="fw-bold">Selesai</p>
+                        <p class="fw-bold">Lelang Selesai</p>
                         <p>20 Agustus 2022</p>
                     </div>
                     <p class="fw-bold">Deskripsi</p>
@@ -34,7 +36,7 @@
             <div class="col-lg-8 my-4 mx-auto">
                 <h4 class="txt-bold">Unggah Bukti Jaminan</h4>
                 <p>Anda sudah terdaftar paket lelang ini, silahkan unggah bukti transfer uang jaminan. Cek kembali data dibawah sebelum disubmit.</p>
-                <form action="<?= base_url('lelang-saya') ?>" method="" enctype="multipart/form-data">
+                <form id="bukti-form" action="<?= base_url('lelang-saya') ?>" method="" enctype="multipart/form-data">
                     <?= csrf_field(); ?>
                     <div class="form-group mb-3">
                         <label for="inputNama" class="form-label txt-md">Nama</label>
@@ -66,9 +68,11 @@
                         <input class="dropify" type="file" id="formFile" name="bukti" data-allowed-file-extensions="jpg png jpeg" required>
                     </div>
                     <div class="text-center">
-                        <div class="text-center">
-                            <button type="submit" onclick="submitBtn()" class="btn btn-primary">Simpan Bukti</button>
-                        </div>
+                        <a href="" data-bs-toggle="modal" data-bs-target="#modalSuccess">
+                            <div class="text-center">
+                                <button type="submit" onclick="submitBtn()" class="btn btn-primary">Simpan Bukti</button>
+                            </div>
+                        </a>
                     </div>
                 </form>
             </div>
@@ -112,45 +116,35 @@
             </div>
         </div>
         <!-- Modal Preview Image -->
+
+        <!-- Modal Success -->
+        <div class="modal fade" id="modalSuccess" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="container text-center">
+                            <img src="/asset/image/Success.png" alt="success" style="height: 300px; width: 300px">
+                            <h4 class="mt-4" style="color: black;">Berhasil Menyimpan Bukti</h4>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="<?= base_url('lelang-saya'); ?>">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Success -->
     </div>
 </main>
 
 <script>
-    // $(document).ready(function() {
-    //     $(document).on('change', '.btn-file :file', function() {
-    //         var input = $(this),
-    //             label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
-    //         input.trigger('fileselect', [label]);
-    //     });
-
-    //     $('.btn-file :file').on('fileselect', function(event, label) {
-
-    //         var input = $(this).parents('.input-group').find(':text'),
-    //             log = label;
-
-    //         if (input.length) {
-    //             input.val(log);
-    //         } else {
-    //             if (log) alert(log);
-    //         }
-
-    //     });
-
-    //     function readURL(input) {
-    //         if (input.files && input.files[0]) {
-    //             var reader = new FileReader();
-
-    //             reader.onload = function(e) {
-    //                 $('#img-upload').attr('src', e.target.result);
-    //             }
-
-    //             reader.readAsDataURL(input.files[0]);
-    //         }
-    //     }
-
-    //     $("#imgInp").change(function() {
-    //         readURL(this);
-    //     });
-    // });
+    function submitBtn() {
+        $(document).ready(function() {
+            $("#bukti-form").validate();
+        });
+    }
 </script>
+
 <?= $this->endSection(); ?>

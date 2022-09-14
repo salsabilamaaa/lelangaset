@@ -2,11 +2,12 @@
 
 <?= $this->section('content'); ?>
 
+<br><br>
+
 <main>
-    <div class="container mt-4">
-        <h2 class="txt-bold">Lelang yang saya ikuti</h2>
-        <br />
-        <ul class="nav nav-tabs nav-justified mb-3" id="myTab" role="tablist">
+    <div class="mt-5">
+        <h2 class="m-5 txt-bold">Lelang yang saya ikuti</h2>
+        <ul class="mt-4 mx-5 nav nav-tabs justify-content-start px-5" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="berlangsung-tab" data-bs-toggle="tab" data-bs-target="#berlangsung-tab-pane" type="button" role="tab" aria-controls="berlangsun-tab-pane" aria-selected="true">Lelang Berlangsung</button>
             </li>
@@ -14,8 +15,8 @@
                 <button class="nav-link" id="riwayat-tab" data-bs-toggle="tab" data-bs-target="#riwayat-tab-pane" type="button" role="tab" aria-controls="riwayat-tab-pane" aria-selected="false">Riwayat Lelang</button>
             </li>
         </ul>
-        <div class="tab-content mt-2" id="myTabContent">
-            <div class="tab-pane fade show active" id="berlangsung-tab-pane" role="tabpanel" aria-labelledby="berlangsung-tab" tabindex="0">
+        <div class="tab-content tab-bg" id="myTabContent">
+            <div class="tab-pane fade show active py-3" id="berlangsung-tab-pane" role="tabpanel" aria-labelledby="berlangsung-tab" tabindex="0">
                 <div class="container">
                     <div class="card mb-3">
                         <a href="<?= base_url('unggah-bukti'); ?>" class="stretched-link"></a>
@@ -129,7 +130,7 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="riwayat-tab-pane" role="tabpanel" aria-labelledby="riwayat-tab" tabindex="0">
+            <div class="tab-pane fade py-3" id="riwayat-tab-pane" role="tabpanel" aria-labelledby="riwayat-tab" tabindex="0">
                 <div class="container">
                     <div class="card mb-3">
                         <a href="<?= base_url('hasil-lelang'); ?>" class="stretched-link"></a>

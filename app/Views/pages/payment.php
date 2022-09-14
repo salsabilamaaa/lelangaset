@@ -2,9 +2,39 @@
 
 <?= $this->section('content'); ?>
 
+<br><br>
+
+<script type="text/javascript">
+    window.onload = function() {
+        OpenBootstrapPopup();
+    };
+
+    function OpenBootstrapPopup() {
+        $("#modalSuccess").modal('show');
+    }
+</script>
+
 <main class="container-fluid">
-    <div class="m-4">
-        <div class="row justify-content-between">
+    <!-- Modal Success -->
+    <div class="modal fade" id="modalSuccess" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <img src="/asset/image/Success.png" alt="success" style="height: 300px; width: 300px">
+                        <h4 class="mt-4" style="color: black;">Pendaftaran Paket Lelang Berhasil</h4>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Success -->
+
+    <div class="m-4 mt-5">
+        <div class=" row justify-content-between">
             <!-- Info Paket -->
             <div class="d-none d-lg-block col-lg-3 mx-auto">
                 <div class="my-3 mx-auto text-center">
@@ -21,7 +51,7 @@
                         <p>Rp. 300.000</p>
                     </div>
                     <div class="d-flex justify-content-between">
-                        <p class="fw-bold">Selesai</p>
+                        <p class="fw-bold">Lelang Selesai</p>
                         <p>20 Agustus 2022</p>
                     </div>
                     <p class="fw-bold">Deskripsi</p>
@@ -32,9 +62,11 @@
 
             <!-- Info Pembayaran -->
             <div class="col-lg-8 my-4 mx-auto">
-                <h4 class="txt-bold">Daftar Paket Lelang Berhasil</h4>
+                <div class="status-box-green rounded mb-4">
+                    <h4 class="p-2 txt-md text-center" style="color: white;">Daftar Paket Lelang Berhasil</h4>
+                </div>
                 <br>
-                <p>Silahkan lanjut pembayaran uang jaminan dengan sebelum lelang berakhir.</p>
+                <p>Silahkan lanjut pembayaran uang jaminan dengan sebelum lelang berakhir. Pembayaran dapat dilakukan melalui mbanking, ATM, dan Bank. <a href="#accordionTutorial">Lihat tata cara pembayaran</a></p>
                 <br>
                 <div class="container text-center">
                     <h2>Rp. 300.002</h2>
@@ -50,15 +82,18 @@
                     </a>
                 </div>
 
+                <hr>
+
                 <!-- Tata Cara Pembayaran -->
-                <div class="accordion" id="accordionExample">
+                <h4 class="txt-md my-4">Tata Cara Pembayaran Melalui: </h4>
+                <div class="accordion" id="accordionTutorial">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                 Melalui Bank
                             </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionTutorial">
                             <div class="accordion-body">
                                 <p>Tata Cara Melalui Bank</p>
                             </div>
@@ -70,7 +105,7 @@
                                 Melalui ATM
                             </button>
                         </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionTutorial">
                             <div class="accordion-body">
                                 <p>Tata Cara Melalui ATM</p>
                             </div>
@@ -82,7 +117,7 @@
                                 Melalui mBanking
                             </button>
                         </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionTutorial">
                             <div class="accordion-body">
                                 <p>Tata Cara Melalui mBanking</p>
                             </div>

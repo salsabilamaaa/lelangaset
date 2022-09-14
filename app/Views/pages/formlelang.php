@@ -2,8 +2,10 @@
 
 <?= $this->section('content'); ?>
 
+<br><br>
+
 <main class="container-fluid">
-    <div class="m-4">
+    <div class="m-4 mt-5">
         <h2 class="txt-bold">Paket Produk Lelang</h2>
     </div>
     <div class="d-flex m-4">
@@ -22,7 +24,7 @@
                     <p>Rp. 300.000</p>
                 </div>
                 <div class="d-flex justify-content-between">
-                    <p class="fw-bold">Selesai</p>
+                    <p class="fw-bold">Lelang Selesai</p>
                     <p>20 Agustus 2022</p>
                 </div>
                 <p class="fw-bold">Deskripsi</p>
@@ -34,13 +36,13 @@
                     Penawaran Anda
                 </p>
                 <div class="mb-3">
-                    <input type="text" class="form-control" id="hargapenawaran" placeholder="Rp. 1.000.000">
+                    <input type="text" class="form-control" id="hargapenawaran" placeholder="Rp. 1.000.000" required>
                 </div>
                 <div class="text-center">
-                    <a href="<?= base_url('lelang-saya'); ?>">
-                        <button type="button" class="btn btn-primary">
-                            Submit
-                        </button>
+                    <a href="" data-bs-toggle="modal" data-bs-target="#modalSuccess">
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -84,6 +86,26 @@
         </div>
     </div>
     <!-- Modal Preview Image -->
+
+    <!-- Modal Success -->
+    <div class="modal fade" id="modalSuccess" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <img src="/asset/image/Success.png" alt="success" style="height: 300px; width: 300px">
+                        <h4 class="mt-4" style="color: black;">Anda Berhasil Melakukan Penawaran</h4>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="<?= base_url('lelang-saya'); ?>">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Success -->
 </main>
 
 <?= $this->endSection(); ?>

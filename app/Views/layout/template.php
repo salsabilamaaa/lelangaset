@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/asset/css/style.css">
 </head>
 
-<body class="d-flex flex-column min-vh-100" style="background-color: #F9F9F9;">
+<body class="d-flex flex-column min-vh-100">
     <?= $this->include('layout/navbar'); ?>
 
     <?= $this->renderSection('content'); ?>

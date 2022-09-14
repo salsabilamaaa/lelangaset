@@ -2,9 +2,11 @@
 
 <?= $this->section('content'); ?>
 
+<br><br>
+
 <main class="container-fluid">
-    <div class="m-4">
-        <h2 class="txt-bold">Paket Produk Lelang</h2>
+    <div class="m-4 mt-5">
+        <h2 class=" txt-bold">Paket Produk Lelang</h2>
     </div>
     <div class="m-4">
         <div class="row justify-content-between">
@@ -22,7 +24,7 @@
                     <p>Rp. 300.000</p>
                 </div>
                 <div class="d-flex justify-content-between">
-                    <p class="fw-bold">Selesai</p>
+                    <p class="fw-bold">Lelang Selesai</p>
                     <p>20 Agustus 2022</p>
                 </div>
                 <p class="fw-bold">Deskripsi</p>

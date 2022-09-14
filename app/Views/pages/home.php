@@ -2,50 +2,59 @@
 
 <?= $this->section('content'); ?>
 
-<main class="container-fluid">
+<main>
     <!-- Banner -->
+    <!-- Hero Section -->
     <section>
-        <div class="m-4">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="bg-image vh-75 d-flex justify-content-center align-items-center p-5">
+            <div id="carouselIndicators" class="carousel slide text-center" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 </div>
-                <div class="carousel-inner">
+                <div class="carousel-inner m-5 g-5">
                     <div class="carousel-item active">
-                        <img src="../asset/image/banner-1.png" class="d-block w-100 rounded" alt="banner-1">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12 d-flex flex-column justify-content-center">
+                                <h2 class="display-4 fw-bold lh-1 mb-3">Heading Text</h2>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <img src="../asset/image/hero-image.png" class="img-fluid">
+                            </div>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="../asset/image/banner-1.png" class="d-block w-100 rounded" alt="banner-2">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12 d-flex flex-column justify-content-center">
+                                <h2 class="display-4 fw-bold lh-1 mb-3">Heading Text</h2>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <img src="../asset/image/hero-image.png" class="img-fluid">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </div>
     </section>
-    <!-- Banner -->
+    <!-- Hero Section -->
+
+    <br><br>
 
     <!-- Lelang Product -->
     <section>
-        <div class="m-4 mt-5">
+        <div class="m-4 mt-3" id="contentProduk">
             <h2 class="mb-4 txt-bold">Produk Lelang</h2>
             <div class="row">
                 <!-- Filter -->
                 <div class="col-lg-3 mb-4 accordion" id="accordionExample">
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button collapsed txt-md" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFilter" aria-expanded="false" aria-controls="collapseFilter">
+                        <h2 class="accordion-header" id="headingFilter">
+                            <button class="accordion-button collapsed txt-md" style="background-color: #00957E; color: white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFilter" aria-expanded="false" aria-controls="collapseFilter">
                                 Filter Produk
                             </button>
                         </h2>
-                        <div id="collapseFilter" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div id="collapseFilter" class="accordion-collapse collapse show" aria-labelledby="headingFilter" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <!-- Category -->
                                 <h6>Kategori</h6>
@@ -82,7 +91,7 @@
 
                                 <div class="text-center">
                                     <button type="button" class="btn btn-primary">
-                                        Simpan
+                                        Cari
                                     </button>
                                 </div>
                                 <!-- Cost -->
