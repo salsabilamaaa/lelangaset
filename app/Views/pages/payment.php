@@ -4,42 +4,34 @@
 
 <br><br>
 
-<script type="text/javascript">
-    window.onload = function() {
-        OpenBootstrapPopup();
-    };
-
-    function OpenBootstrapPopup() {
-        $("#modalSuccess").modal('show');
-    }
-</script>
-
 <main class="container-fluid">
     <!-- Modal Success -->
-    <div class="modal fade" id="modalSuccess" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
+    <div class="modal fade" id="modalSuccessRegist" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-body">
-                    <div class="container text-center">
+                    <div class="container text-center p-4">
                         <img src="/asset/image/Success.png" alt="success" style="height: 300px; width: 300px">
-                        <h4 class="mt-4" style="color: black;">Pendaftaran Paket Lelang Berhasil</h4>
+                        <h4 class="mt-4 txt-bold" style="color: black;">Anda berhasil mendaftar lelang</h4>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <a href="<?= base_url('lelang-saya'); ?>">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
     <!-- Modal Success -->
 
-    <div class="m-4 mt-5">
+    <div class="m-4">
         <div class=" row justify-content-between">
             <!-- Info Paket -->
-            <div class="d-none d-lg-block col-lg-3 mx-auto">
+            <div class="d-none d-lg-block col-lg-4 mx-auto">
                 <div class="my-3 mx-auto text-center">
                     <a href="" data-bs-toggle="modal" data-bs-target="#previewImage">
-                        <img src="../asset/image/item-1.jpg" class="img-thumbnail rounded" style="object-fit: cover; width: 300px; height: 300px" alt="Kursi">
+                        <img src="../asset/image/item-1.jpg" class="img-thumbnail rounded" style="object-fit: cover" alt="Kursi">
                     </a>
                 </div>
                 <div class="my-3 mx-auto">
@@ -61,7 +53,7 @@
             <!-- Info Paket -->
 
             <!-- Info Pembayaran -->
-            <div class="col-lg-8 my-4 mx-auto">
+            <div class="col-lg-6 my-4 mx-auto">
                 <div class="status-box-green rounded mb-4">
                     <h4 class="p-2 txt-md text-center" style="color: white;">Daftar Paket Lelang Berhasil</h4>
                 </div>
@@ -85,8 +77,8 @@
                 <hr>
 
                 <!-- Tata Cara Pembayaran -->
-                <h4 class="txt-md my-4">Tata Cara Pembayaran Melalui: </h4>
-                <div class="accordion" id="accordionTutorial">
+                <h4 class="txt-md my-4" id="accordionTutorial">Tata Cara Pembayaran Melalui: </h4>
+                <div class="accordion">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
@@ -128,43 +120,44 @@
             </div>
             <!-- Info Pembayaran -->
         </div>
-        <!-- Modal Preview Image -->
-        <div class="modal fade" id="previewImage" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalLabel">Gambar Preview</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="carousel slide" data-ride="carousel" id="image-carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../asset/image/item-3.jpg" class="img-fluid rounded" style="object-fit: cover;" alt="item-1">
-                            </div>
-                            <div class="carousel-item active">
-                                <img src="../asset/image/item-2.jpg" class="img-fluid rounded" style="object-fit: cover;" alt="item-1">
-                            </div>
-                            <div class="carousel-item active">
-                                <img src="../asset/image/item-1.jpg" class="img-fluid rounded" style="object-fit: cover;" alt="item-1">
-                            </div>
+    </div>
+
+    <!-- Modal Preview Image -->
+    <div class="modal fade" id="previewImage" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Gambar Preview</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="carousel slide" data-ride="carousel" id="image-carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../asset/image/item-3.jpg" class="img-fluid rounded" style="object-fit: cover;" alt="item-1">
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#image-carousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#image-carousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                        <div class="carousel-item active">
+                            <img src="../asset/image/item-2.jpg" class="img-fluid rounded" style="object-fit: cover;" alt="item-1">
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="../asset/image/item-1.jpg" class="img-fluid rounded" style="object-fit: cover;" alt="item-1">
+                        </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#image-carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#image-carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
-        <!-- Modal Preview Image -->
     </div>
+    <!-- Modal Preview Image -->
 </main>
 
 <?= $this->endSection(); ?>

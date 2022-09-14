@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-light fixed-top mb-5" aria-label="Navbar Lelang Aset">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top mb-5 bg-nav-scroll" aria-label="Navbar Lelang Aset">
     <div class="container">
         <a class="navbar-brand" href="<?= base_url('/') ?>">
-            <img src="/asset/image/Logo.png" alt="eLelang Kota Jogja" height="36">
+            <img src="/asset/image/Logo-white.png" alt="eLelang Kota Jogja" height="36">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbaritem" aria-controls="navbaritem" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -63,9 +63,9 @@
 
     window.addEventListener('scroll', function() {
         if (window.pageYOffset > 50) {
-            nav.classList.add('bg-nav-scroll', 'shadow');
+            nav.classList.add('shadow');
         } else {
-            nav.classList.remove('bg-nav-scroll', 'shadow')
+            nav.classList.remove('shadow');
         }
     })
 </script>

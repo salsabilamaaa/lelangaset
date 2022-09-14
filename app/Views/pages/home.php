@@ -15,21 +15,21 @@
                 <div class="carousel-inner m-5 g-5">
                     <div class="carousel-item active">
                         <div class="row">
-                            <div class="col-lg-6 col-sm-12 d-flex flex-column justify-content-center">
-                                <h2 class="display-4 fw-bold lh-1 mb-3">Heading Text</h2>
-                            </div>
                             <div class="col-lg-6 col-sm-12">
                                 <img src="../asset/image/hero-image.png" class="img-fluid">
+                            </div>
+                            <div class="col-lg-6 col-sm-12 d-flex flex-column justify-content-center">
+                                <h2 class="display-4 fw-bold lh-1 mb-3" style="color: white;">Heading Text</h2>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="row">
-                            <div class="col-lg-6 col-sm-12 d-flex flex-column justify-content-center">
-                                <h2 class="display-4 fw-bold lh-1 mb-3">Heading Text</h2>
-                            </div>
                             <div class="col-lg-6 col-sm-12">
                                 <img src="../asset/image/hero-image.png" class="img-fluid">
+                            </div>
+                            <div class="col-lg-6 col-sm-12 d-flex flex-column justify-content-center">
+                                <h2 class="display-4 fw-bold lh-1 mb-3" style="color: white;">Heading Text</h2>
                             </div>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
                 <div class="col-lg-3 mb-4 accordion" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingFilter">
-                            <button class="accordion-button collapsed txt-md" style="background-color: #00957E; color: white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFilter" aria-expanded="false" aria-controls="collapseFilter">
+                            <button class="accordion-button collapsed txt-md" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFilter" aria-expanded="false" aria-controls="collapseFilter">
                                 Filter Produk
                             </button>
                         </h2>
@@ -118,7 +118,7 @@
                         <div class="col">
                             <div class="card h-100">
                                 <a href="<?= base_url('detail-produk'); ?>" class="stretched-link"></a>
-                                <img src="../asset/image/item-1.jpg" class="card-img-top p-2 img-4" alt="Item 2" />
+                                <img src="../asset/image/item-1.jpg" class="card-img-top p-2" alt="Item 2" />
                                 <div class="card-body">
                                     <p class="txt-md">Barang Kantor</p>
                                     <h5 class="card-title">Kursi</h5>

@@ -3,7 +3,7 @@ body, nav, footer {
 }
 
 body {
-  background-color: rgba(0, 149, 126, 0.1);
+  background-color: rgba(0, 149, 126, 0.05);
 }
 
 .navbar-nav a{
@@ -118,11 +118,28 @@ p {
   height: 250px;
 }
 
+.bi {
+  color: white;
+}
+
 .bg-image {
   background-image: url('/asset/image/hero-section.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.dropdown-toggle::after {
+  content: none;
+}
+
+.accordion-button:after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.accordion-button {
+  background-color: #00957E;
+  color: white
 }
 
 label.error {
