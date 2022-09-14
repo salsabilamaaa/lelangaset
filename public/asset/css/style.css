@@ -69,9 +69,6 @@ p {
   width: auto;
   height: auto;
   background-color: #479F76;
-}
-
-.status-box-green p{
   color: white;
 }
 
@@ -85,9 +82,6 @@ p {
   width: auto;
   height: auto;
   background-color: #E35D6A;
-}
-
-.status-box-red p{
   color: white;
 }
 
@@ -95,9 +89,6 @@ p {
   width: auto;
   height: auto;
   background-color: #3D8BFD;
-}
-
-.status-box-blue p{
   color: white;
 }
 
@@ -105,6 +96,32 @@ p {
   width: auto;
   height: auto;
   background-color: #ADB5BD;
+}
+
+
+.status-img-blue {
+  position: absolute;
+  background-color: #3D8BFD;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  border-radius: 0px 0px 8px 0px;
+}
+
+.status-img-yellow {
+  position: absolute;
+  background-color: #FFC107;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 0px 0px 8px 0px;
+}
+
+.status-img-grey {
+  position: absolute;
+  background-color: #ADB5BD;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 0px 0px 8px 0px;
 }
 
 .card:hover {

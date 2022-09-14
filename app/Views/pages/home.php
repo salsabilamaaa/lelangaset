@@ -108,6 +108,7 @@
                             <div class="card h-100">
                                 <a href="<?= base_url('detail-produk'); ?>" class="stretched-link"></a>
                                 <img src="../asset/image/item-3.jpg" class="card-img-top p-2 img-4" alt="Item 1" />
+                                <p class="status-img-blue p-2">Berlangsung</p>
                                 <div class="card-body">
                                     <p class="txt-md">Barang Kantor</p>
                                     <h5 class="card-title">Kursi</h5>
@@ -118,7 +119,8 @@
                         <div class="col">
                             <div class="card h-100">
                                 <a href="<?= base_url('detail-produk'); ?>" class="stretched-link"></a>
-                                <img src="../asset/image/item-1.jpg" class="card-img-top p-2" alt="Item 2" />
+                                <img src="../asset/image/item-1.jpg" class="card-img-top p-2 img-4" alt="Item 2" />
+                                <p class="status-img-grey p-2">Lelang Selesai</p>
                                 <div class="card-body">
                                     <p class="txt-md">Barang Kantor</p>
                                     <h5 class="card-title">Kursi</h5>
@@ -130,6 +132,7 @@
                             <div class="card h-100">
                                 <a href="<?= base_url('detail-produk'); ?>" class="stretched-link"></a>
                                 <img src="../asset/image/item-3.jpg" class="card-img-top p-2 img-4" alt="item-1">
+                                <p class="status-img-grey p-2">Lelang Selesai</p>
                                 <div class="card-body">
                                     <p class="txt-md">Barang Kantor</p>
                                     <h5 class="card-title txt-bold">Kursi</h5>
@@ -141,6 +144,7 @@
                             <div class="card h-100">
                                 <a href="<?= base_url('detail-produk'); ?>" class="stretched-link"></a>
                                 <img src="../asset/image/item-3.jpg" class="card-img-top p-2 img-4" alt="item-1">
+                                <p class="status-img-yellow p-2">Akan Datang</p>
                                 <div class="card-body">
                                     <p class="txt-md">Barang Kantor</p>
                                     <h5 class="card-title">Kursi</h5>
@@ -152,6 +156,7 @@
                             <div class="card h-100">
                                 <a href="<?= base_url('detail-produk'); ?>" class="stretched-link"></a>
                                 <img src="../asset/image/item-3.jpg" class="card-img-top p-2 img-4" alt="item-1">
+                                <p class="status-img-yellow p-2">Akan Datang</p>
                                 <div class="card-body">
                                     <p class="txt-md">Barang Kantor</p>
                                     <h5 class="card-title">Kursi</h5>
@@ -163,39 +168,7 @@
                             <div class="card h-100">
                                 <a href="<?= base_url('detail-produk'); ?>" class="stretched-link"></a>
                                 <img src="../asset/image/item-3.jpg" class="card-img-top p-2 img-4" alt="item-1">
-                                <div class="card-body">
-                                    <p class="txt-md">Barang Kantor</p>
-                                    <h5 class="card-title">Kursi</h5>
-                                    <h4>Rp. 500.000</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <a href="<?= base_url('detail-produk'); ?>" class="stretched-link"></a>
-                                <img src="../asset/image/item-3.jpg" class="card-img-top p-2 img-4" alt="item-1">
-                                <div class="card-body">
-                                    <p class="txt-md">Barang Kantor</p>
-                                    <h5 class="card-title">Kursi</h5>
-                                    <h4>Rp. 500.000</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <a href="<?= base_url('detail-produk'); ?>" class="stretched-link"></a>
-                                <img src="../asset/image/item-3.jpg" class="card-img-top p-2 img-4" alt="item-1">
-                                <div class="card-body">
-                                    <p class="txt-md">Barang Kantor</p>
-                                    <h5 class="card-title">Kursi</h5>
-                                    <h4>Rp. 500.000</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <a href="<?= base_url('detail-produk'); ?>" class="stretched-link"></a>
-                                <img src="../asset/image/item-3.jpg" class="card-img-top p-2 img-4" alt="item-1">
+                                <p class="status-img-blue p-2">Berlangsung</p>
                                 <div class="card-body">
                                     <p class="txt-md">Barang Kantor</p>
                                     <h5 class="card-title">Kursi</h5>
@@ -204,6 +177,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Product Item -->
 
                     <!-- Pagination -->
                     <nav aria-label="Page navigation example" class="my-5">
@@ -225,9 +199,7 @@
                     </nav>
                     <!-- Pagination -->
                 </div>
-                <!-- Product Item -->
             </div>
-        </div>
     </section>
     <!-- Lelang Product -->
 </main>
