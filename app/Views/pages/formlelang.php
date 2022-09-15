@@ -20,34 +20,38 @@
                 <h1>Rp.3.000.000</h1>
                 <hr>
                 <div class="d-flex justify-content-between">
-                    <p class="fw-bold">Jaminan</p>
+                    <p class="txt-bold">Jaminan</p>
                     <p>Rp. 300.000</p>
                 </div>
                 <div class="d-flex justify-content-between">
-                    <p class="fw-bold">Lelang Selesai</p>
+                    <p class="txt-bold">Lelang Selesai</p>
                     <p>20 Agustus 2022</p>
                 </div>
-                <p class="fw-bold">Deskripsi</p>
+                <p class="txt-bold">Deskripsi</p>
                 <p>Deskripsi barang</p>
             </div>
             <div class="col-lg-4 my-2">
                 <p>Proses lelang anda sudah diverifikasi, silahkan masukkan penawaran anda</p>
-                <p class="fw-bold">
+                <div class="d-flex justify-content-between">
+                    <p class="txt-md">Penawaran sebelumnya</p>
+                    <p class="txt-bold">Rp. 1.000.000</p>
+                </div>
+                <hr>
+                <p class="txt-bold">
                     Penawaran Anda
                 </p>
                 <div class="mb-3">
                     <input type="text" class="form-control" id="hargapenawaran" placeholder="Rp. 1.000.000" required>
                 </div>
-                <div class="text-center">
-                    <a href="" data-bs-toggle="modal" data-bs-target="#modalSuccess">
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </div>
-                    </a>
-                </div>
+                <a href="" data-bs-toggle="modal" data-bs-target="#modalSuccess">
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
+
     <!-- Modal Preview Image -->
     <div class="modal fade" id="previewImage" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -88,8 +92,8 @@
     <!-- Modal Preview Image -->
 
     <!-- Modal Success -->
-    <div class="modal fade" id="modalSuccess" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
+    <div class="modal fade" id="modalSuccess" tabindex="-1" role="dialog" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-body">
                     <div class="container text-center">

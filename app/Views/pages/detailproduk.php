@@ -20,15 +20,15 @@
                 <h1>Rp.3.000.000</h1>
                 <hr>
                 <div class="d-flex justify-content-between">
-                    <p class="fw-bold">Jaminan</p>
+                    <p class="txt-bold">Jaminan</p>
                     <p>Rp. 300.000</p>
                 </div>
                 <div class="d-flex justify-content-between">
-                    <p class="fw-bold">Lelang Selesai</p>
+                    <p class="txt-bold">Lelang Selesai</p>
                     <p>20 Agustus 2022</p>
                 </div>
                 <hr>
-                <p class="fw-bold">Deskripsi</p>
+                <p class="txt-bold">Deskripsi</p>
                 <p>Deskripsi barang</p>
             </div>
             <div class="col-lg-4 my-2">
@@ -36,7 +36,7 @@
                     <p class="p-1 text-center">Anda belum terdaftar paket lelang ini</p>
                 </div>
                 <h4 class="mb-5">Daftar Lelang Sekarang</h4>
-                <form class="needs-validation" id="daftar-form" action="<?= base_url('daftar-lelang') ?>">
+                <form class="needs-validation" id="daftar-form" action="<?= base_url('daftar-lelang') ?>" novalidate>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="notifchecked" checked>
                         <label class="form-check-label" for="notifchecked">
@@ -54,7 +54,7 @@
                         </div>
                     </div>
                     <div class="text-center mt-5">
-                        <button type="submit" onclick="submitBtn()" class="btn btn-primary">Daftar Lelang</button>
+                        <button type="submit" onclick="ValidationForm()" class="btn btn-primary">Daftar Lelang</button>
                     </div>
                 </form>
             </div>

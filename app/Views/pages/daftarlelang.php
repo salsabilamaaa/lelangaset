@@ -39,7 +39,7 @@
                 </div>
                 <h2 class="mb-4">Daftar Paket Lelang</h2>
                 <p>Anda belum terdaftar paket lelang ini, silakan cek kembali data dibawah sebelum daftar lelang.</p>
-                <form id="registrasi-form" class="needs-validation" action="<?= base_url('pembayaran'); ?>" method="">
+                <form id="registrasi-form" class="needs-validation" action="<?= base_url('pembayaran'); ?>" method="" novalidate>
                     <div class="mb-3">
                         <label for="nama" class="form-label txt-md">Nama</label>
                         <input type="text" class="form-control" id="nama" placeholder="Nama Pengguna" disabled>
@@ -74,7 +74,7 @@
                         </div>
                     </div>
                     <div class="text-center">
-                        <button type="submit" onclick="submitBtn()" class="btn btn-primary">Daftar Lelang</button>
+                        <button type="submit" onclick="ValidationForm()" class="btn btn-primary">Daftar Lelang</button>
                     </div>
                 </form>
             </div>
@@ -120,13 +120,4 @@
         <!-- Modal Preview Image -->
     </div>
 </main>
-
-<script>
-    function submitBtn() {
-        $(document).ready(function() {
-            $("#registrasi-form").validate();
-        });
-    }
-</script>
-
 <?= $this->endSection(); ?>

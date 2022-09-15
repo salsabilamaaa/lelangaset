@@ -18,6 +18,7 @@
         <div class="tab-content tab-bg" id="myTabContent">
             <div class="tab-pane fade show active py-3" id="berlangsung-tab-pane" role="tabpanel" aria-labelledby="berlangsung-tab" tabindex="0">
                 <div class="container">
+                    <!-- Card Lelang Saya -->
                     <div class="card mb-3">
                         <a href="<?= base_url('unggah-bukti'); ?>" class="stretched-link"></a>
                         <div class="card-body">
@@ -54,7 +55,9 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Card Lelang Saya -->
 
+                    <!-- Card Lelang Saya -->
                     <div class="card mb-3">
                         <a href="<?= base_url('pelelangan'); ?>" class="stretched-link"></a>
                         <div class="card-body">
@@ -91,7 +94,9 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Card Lelang Saya -->
 
+                    <!-- Card Lelang Saya -->
                     <div class="card mb-3">
                         <a href="<?= base_url('pelelangan'); ?>" class="stretched-link"></a>
                         <div class="card-body">
@@ -128,10 +133,13 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Card Lelang Saya -->
+
                 </div>
             </div>
             <div class="tab-pane fade py-3" id="riwayat-tab-pane" role="tabpanel" aria-labelledby="riwayat-tab" tabindex="0">
                 <div class="container">
+                    <!-- Card Lelang Saya -->
                     <div class="card mb-3">
                         <a href="<?= base_url('hasil-lelang'); ?>" class="stretched-link"></a>
                         <div class="card-body">
@@ -168,7 +176,9 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Card Lelang Saya -->
 
+                    <!-- Card Lelang Saya -->
                     <div class="card mb-3">
                         <a href="<?= base_url('unggah-bukti'); ?>" class="stretched-link"></a>
                         <div class="card-body">
@@ -205,6 +215,8 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Card Lelang Saya -->
+
                 </div>
             </div>
         </div>

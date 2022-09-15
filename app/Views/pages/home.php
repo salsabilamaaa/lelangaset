@@ -15,21 +15,23 @@
                 <div class="carousel-inner m-5 g-5">
                     <div class="carousel-item active">
                         <div class="row">
-                            <div class="col-lg-6 col-sm-12">
-                                <img src="../asset/image/hero-image.png" class="img-fluid">
+                            <div class="col-lg-6">
+                                <img src="../asset/image/banner-1.png" class="img-fluid">
                             </div>
-                            <div class="col-lg-6 col-sm-12 d-flex flex-column justify-content-center">
-                                <h2 class="display-4 fw-bold lh-1 mb-3" style="color: white;">Heading Text</h2>
+                            <div class="col-lg-6 d-flex flex-column justify-content-center">
+                                <h4 class="txt-bold lh-1 my-3" style="color: white;">Heading Text</h4>
+                                <p style="color: white;">Content Text</p>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="row">
-                            <div class="col-lg-6 col-sm-12">
+                            <div class="col-lg-6">
                                 <img src="../asset/image/hero-image.png" class="img-fluid">
                             </div>
-                            <div class="col-lg-6 col-sm-12 d-flex flex-column justify-content-center">
-                                <h2 class="display-4 fw-bold lh-1 mb-3" style="color: white;">Heading Text</h2>
+                            <div class="col-lg-6 d-flex flex-column justify-content-center">
+                                <h4 class="txt-bold my-3" style="color: white;">Heading Text</h4>
+                                <p style="color: white;">Content Text</p>
                             </div>
                         </div>
                     </div>
@@ -104,78 +106,74 @@
                 <!-- Product Item -->
                 <div class="col-lg-9">
                     <div class="row row-cols-1 row-cols-md-4 g-4">
+                        <!-- Card Product Item -->
                         <div class="col">
                             <div class="card h-100">
                                 <a href="<?= base_url('detail-produk'); ?>" class="stretched-link"></a>
-                                <img src="../asset/image/item-3.jpg" class="card-img-top p-2 img-4" alt="Item 1" />
+                                <img src="../asset/image/item-3.jpg" class="card-img-top p-2 img-custom" alt="Item 1" />
                                 <p class="status-img-blue p-2">Berlangsung</p>
                                 <div class="card-body">
-                                    <p class="txt-md">Barang Kantor</p>
-                                    <h5 class="card-title">Kursi</h5>
-                                    <h4>Rp. 500.000</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <a href="<?= base_url('detail-produk'); ?>" class="stretched-link"></a>
-                                <img src="../asset/image/item-1.jpg" class="card-img-top p-2 img-4" alt="Item 2" />
-                                <p class="status-img-grey p-2">Lelang Selesai</p>
-                                <div class="card-body">
-                                    <p class="txt-md">Barang Kantor</p>
-                                    <h5 class="card-title">Kursi</h5>
-                                    <h4>Rp. 500.000</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <a href="<?= base_url('detail-produk'); ?>" class="stretched-link"></a>
-                                <img src="../asset/image/item-3.jpg" class="card-img-top p-2 img-4" alt="item-1">
-                                <p class="status-img-grey p-2">Lelang Selesai</p>
-                                <div class="card-body">
-                                    <p class="txt-md">Barang Kantor</p>
+                                    <p class="cat-box rounded px-2 py-1">Barang Kantor</p>
                                     <h5 class="card-title txt-bold">Kursi</h5>
                                     <h4>Rp. 500.000</h4>
+                                    <div class="row mt-3">
+                                        <div class="col-6">
+                                            <p style="font-size: small">Lelang Selesai</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <p style="font-size: small">30 Sept 2022</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- Card Product Item -->
+
+                        <!-- Card Product Item -->
                         <div class="col">
                             <div class="card h-100">
                                 <a href="<?= base_url('detail-produk'); ?>" class="stretched-link"></a>
-                                <img src="../asset/image/item-3.jpg" class="card-img-top p-2 img-4" alt="item-1">
+                                <img src="../asset/image/item-1.jpg" class="card-img-top p-2 img-custom" alt="Item 2" />
+                                <p class="status-img-grey p-2">Lelang Selesai</p>
+                                <div class="card-body">
+                                    <p class="cat-box rounded px-2 py-1">Barang Kantor</p>
+                                    <h5 class="card-title txt-bold">Kursi</h5>
+                                    <h4>Rp. 500.000</h4>
+                                    <div class="row mt-3">
+                                        <div class="col-6">
+                                            <p style="font-size: small">Lelang Selesai</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <p style="font-size: small">30 Sept 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card Product Item -->
+
+                        <!-- Card Product Item -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <a href="<?= base_url('detail-produk'); ?>" class="stretched-link"></a>
+                                <img src="../asset/image/item-3.jpg" class="card-img-top p-2 img-custom" alt="item-1">
                                 <p class="status-img-yellow p-2">Akan Datang</p>
                                 <div class="card-body">
-                                    <p class="txt-md">Barang Kantor</p>
-                                    <h5 class="card-title">Kursi</h5>
+                                    <p class="cat-box rounded px-2 py-1">Barang Kantor</p>
+                                    <h5 class="card-title txt-bold">Kursi</h5>
                                     <h4>Rp. 500.000</h4>
+                                    <div class="row mt-3">
+                                        <div class="col-6">
+                                            <p style="font-size: small">Lelang Selesai</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <p style="font-size: small">30 Sept 2022</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <a href="<?= base_url('detail-produk'); ?>" class="stretched-link"></a>
-                                <img src="../asset/image/item-3.jpg" class="card-img-top p-2 img-4" alt="item-1">
-                                <p class="status-img-yellow p-2">Akan Datang</p>
-                                <div class="card-body">
-                                    <p class="txt-md">Barang Kantor</p>
-                                    <h5 class="card-title">Kursi</h5>
-                                    <h4>Rp. 500.000</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <a href="<?= base_url('detail-produk'); ?>" class="stretched-link"></a>
-                                <img src="../asset/image/item-3.jpg" class="card-img-top p-2 img-4" alt="item-1">
-                                <p class="status-img-blue p-2">Berlangsung</p>
-                                <div class="card-body">
-                                    <p class="txt-md">Barang Kantor</p>
-                                    <h5 class="card-title">Kursi</h5>
-                                    <h4>Rp. 500.000</h4>
-                                </div>
-                            </div>
-                        </div>
+                        <!-- Card Product Item -->
                     </div>
                     <!-- Product Item -->
 

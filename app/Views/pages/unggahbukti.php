@@ -36,7 +36,7 @@
             <div class="col-lg-6 my-4 mx-auto">
                 <h4 class="txt-bold">Unggah Bukti Jaminan</h4>
                 <p>Anda sudah terdaftar paket lelang ini, silahkan unggah bukti transfer uang jaminan. Cek kembali data dibawah sebelum disubmit.</p>
-                <form id="bukti-form" class="needs-validation" action="<?= base_url('lelang-saya') ?>" method="" enctype="multipart/form-data">
+                <form id="bukti-form" class="needs-validation" action="<?= base_url('lelang-saya') ?>" method="" enctype="multipart/form-data" novalidate>
                     <?= csrf_field(); ?>
                     <div class="form-group mb-3">
                         <label for="inputNama" class="form-label txt-md">Nama</label>
@@ -74,11 +74,7 @@
                         </div>
                     </div>
                     <div class="text-center">
-                        <a href="" data-bs-toggle="modal" data-bs-target="#modalSuccess">
-                            <div class="text-center">
-                                <button type="submit" onclick="submitBtn()" class="btn btn-primary">Simpan Bukti</button>
-                            </div>
-                        </a>
+                        <button type="submit" onclick="ValidationForm()" class="btn btn-primary">Simpan Bukti</button>
                     </div>
                 </form>
             </div>
@@ -144,13 +140,5 @@
     </div>
     <!-- Modal Success -->
 </main>
-
-<script>
-    function submitBtn() {
-        $(document).ready(function() {
-            $("#bukti-form").validate();
-        });
-    }
-</script>
 
 <?= $this->endSection(); ?>

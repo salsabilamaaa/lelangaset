@@ -58,7 +58,7 @@
                     <h4 class="p-2 txt-md text-center" style="color: white;">Daftar Paket Lelang Berhasil</h4>
                 </div>
                 <br>
-                <p>Silahkan lanjut pembayaran uang jaminan dengan sebelum lelang berakhir. Pembayaran dapat dilakukan melalui mbanking, ATM, dan Bank. <a href="#accordionTutorial">Lihat tata cara pembayaran</a></p>
+                <p>Silahkan lanjut pembayaran sebelum lelang berakhir. Pembayaran dapat dilakukan melalui mbanking, ATM, dan Bank. <a href="#accordionTutorial">Lihat tata cara pembayaran</a></p>
                 <br>
                 <div class="container text-center">
                     <h2>Rp. 300.002</h2>

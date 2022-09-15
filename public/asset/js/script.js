@@ -1,3 +1,14 @@
+// Navbar 
+var nav = document.querySelector('nav');
+
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 50) {
+            nav.classList.add('shadow');
+        } else {
+            nav.classList.remove('shadow');
+        }
+    })
+
 // Open modal payment
 window.onload = function() {
   OpenBootstrapPopup();
@@ -8,7 +19,7 @@ function OpenBootstrapPopup() {
 }
 
 // Validation form
-(function() {
+function ValidationForm() {
   'use strict'
 
   var forms = document.querySelectorAll('.needs-validation')
@@ -20,13 +31,14 @@ function OpenBootstrapPopup() {
                   event.preventDefault()
                   event.stopPropagation()
               }
-
+              
               form.classList.add('was-validated')
+              
           }, false)
       })
-})()
+}
     
-
+// Dropify
 $(document).ready(function(){
   $('.dropify').dropify({
     messages: {

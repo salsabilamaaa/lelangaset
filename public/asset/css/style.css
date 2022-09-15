@@ -98,6 +98,14 @@ p {
   background-color: #ADB5BD;
 }
 
+.cat-box {
+  width: fit-content;
+  height: fit-content;
+  font-size: small;
+  font-weight: 500;
+  color: #00957E;
+  border: 0.5px solid #00957E;
+}
 
 .status-img-blue {
   position: absolute;
@@ -129,7 +137,18 @@ p {
   box-shadow: rgba(0, 0, 0, 0.10) -3px 10px 15px -3px
 }
 
-.img-4 {
+.img-fluid {
+  height: 300px;
+  object-fit: cover;
+}
+
+.img-notif {
+  height: 65px;
+  width: 65px;
+  object-fit: cover;
+}
+
+.img-custom {
   object-fit: cover;
   width: auto;
   height: 250px;

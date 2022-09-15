@@ -20,17 +20,23 @@
                 <h1>Rp.3.000.000</h1>
                 <hr>
                 <div class="d-flex justify-content-between">
-                    <p class="fw-bold">Jaminan</p>
+                    <p class="txt-bold">Jaminan</p>
                     <p>Rp. 300.000</p>
                 </div>
                 <div class="d-flex justify-content-between">
-                    <p class="fw-bold">Lelang Selesai</p>
+                    <p class="txt-bold">Lelang Selesai</p>
                     <p>20 Agustus 2022</p>
                 </div>
-                <p class="fw-bold">Deskripsi</p>
+                <div class="d-flex justify-content-between">
+                    <p class="txt-bold">Kode Registrasi</p>
+                    <p>A0008</p>
+                </div>
+                <p class="txt-bold">Deskripsi</p>
                 <p>Deskripsi barang</p>
             </div>
+
             <div class="col-lg-3 my-2">
+                <p class="status-box-green p-2 rounded text-center">Lelang Berhasil</p>
                 <p>Selamat, anda dapat melakukan pelunasan paket lelang</p>
                 <div class="text-center">
                     <a href="<?= base_url('pembayaran') ?>">
@@ -46,15 +52,17 @@
                             <th>No</th>
                             <th>Tanggal</th>
                             <th>IDJSS</th>
+                            <th>Kode Registrasi</th>
                             <th>Penawaran</th>
                         </tr>
                     </thead>
 
                     <tbody>
-                        <tr>
+                        <tr class="table-info">
                             <td>1</td>
                             <td>12 September 2022, 12.15</td>
                             <td>A1009</td>
+                            <td>A0008</td>
                             <td>Rp. 3.700.000</td>
                         </tr>
 
@@ -62,6 +70,7 @@
                             <td>2</td>
                             <td>12 September 2022, 12.15</td>
                             <td>A1006</td>
+                            <td>A0007</td>
                             <td>Rp. 3.565.000</td>
                         </tr>
 
@@ -69,6 +78,7 @@
                             <td>3</td>
                             <td>12 September 2022, 12.15</td>
                             <td>A1004</td>
+                            <td>A0005</td>
                             <td>Rp. 3.560.000</td>
                         </tr>
 
@@ -76,6 +86,7 @@
                             <td>4</td>
                             <td>12 September 2022, 12.15</td>
                             <td>A1001</td>
+                            <td>A0001</td>
                             <td>Rp. 3.555.000</td>
                         </tr>
 
@@ -83,6 +94,7 @@
                             <td>5</td>
                             <td>12 September 2022, 12.15</td>
                             <td>A1002</td>
+                            <td>A0018</td>
                             <td>Rp. 3.550.000</td>
                         </tr>
 
@@ -90,6 +102,7 @@
                             <td>6</td>
                             <td>12 September 2022, 12.15</td>
                             <td>A1005</td>
+                            <td>A0006</td>
                             <td>Rp. 3.500.000</td>
                         </tr>
                     </tbody>
