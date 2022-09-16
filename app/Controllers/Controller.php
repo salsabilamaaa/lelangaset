@@ -56,21 +56,6 @@ class Controller extends BaseController
             'title' => 'Unggah Bukti | Lelang Aset Kota Jogja'
         ];
 
-        if ($this->request->getMethod() === 'POST') {
-            $rules = [
-                'bukti' => [
-                    'label' => 'Gambar',
-                    'rules' => 'uploaded[bukti]|is_image[bukti]|max_size[bukti, 2048]'
-                ]
-            ];
-
-            if ($this->validate($rules)) {
-                $bukti = $this->request->getFile('bukti');
-                $bukti->move('uploads');
-
-                redirect()->back()->with('success', 'Berhasil diunggah');
-            }
-        }
         return view('pages/unggahbukti', $data);
     }
 
@@ -87,7 +72,7 @@ class Controller extends BaseController
         $data = [
             'title' => 'Lelang Saya | Lelang Aset Kota Jogja'
         ];
-        return view('pages/formlelang', $data);
+        return view('pages/penawaran', $data);
     }
 
     public function hasil_lelang()
