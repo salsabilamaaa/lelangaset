@@ -38,12 +38,12 @@
 
             <!-- After Validate Login -->
             <!-- Notification -->
-            <!-- <div class="btn btn-icon position-relative mx-4" data-bs-toggle="offcanvas" data-bs-target="#NotifikasiSidebar" aria-controls="NotifikasiSidebar">
+            <div class="btn btn-icon position-relative mx-4" data-bs-toggle="offcanvas" data-bs-target="#NotifikasiSidebar" aria-controls="NotifikasiSidebar">
                 <i class="bi bi-bell"></i>
-            </div> -->
+            </div>
 
             <!-- Avatar -->
-            <!-- <div class="dropdown text-end">
+            <div class="dropdown text-end">
                 <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="fs-2 bi bi-person-circle"></i>
                 </a>
@@ -51,7 +51,7 @@
                     <li><a class="dropdown-item" href="<?= base_url('profil') ?>">Profil</a></li>
                     <li><a class="dropdown-item" href="#">Sign out</a></li>
                 </ul>
-            </div> -->
+            </div>
         </div>
         <!-- Right elements -->
     </div>
@@ -88,33 +88,59 @@
 <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-            <div class="modal-header text-center">
-                <h4 class="text-title">Masuk</h4>
-            </div>
             <div class="modal-body">
-                <form action="" method="" novalidate>
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="Username/NIK" required>
-                        <label for="floatingInput">Username/NIK</label>
+                <ul class="nav nav-pills nav-fill nav-justified justify-content-between" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="berlangsung-tab" data-bs-toggle="tab" data-bs-target="#login-tab-pane" type="button" role="tab" aria-controls="login-tab-pane" aria-selected="true">Masuk</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="riwayat-tab" data-bs-toggle="tab" data-bs-target="#registrasi-tab-pane" type="button" role="tab" aria-controls="registrasi-tab-pane" aria-selected="false">Registrasi</button>
+                    </li>
+                </ul>
+                <hr>
+                <div class="tab-content tab-bg" id="myTabContent">
+                    <div class="tab-pane fade show active py-3" id="login-tab-pane" role="tabpanel" aria-labelledby="login-tab" tabindex="0">
+                        <div class="container">
+                            <form action="" method="" novalidate>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="Username/NIK" required>
+                                    <label for="floatingInput">Username/NIK</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+                                    <label for="floatingPassword">Password</label>
+                                </div>
+                                <div class="text-center my-4">
+                                    <button type="submit" class="btn btn-primary">Masuk</button>
+                                </div>
+                                <div class="text-center">
+                                    <a href="" style="color: #00957E;">Lupa Password</a>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    <div class="form-floating">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
-                        <label for="floatingPassword">Password</label>
+                    <div class="tab-pane fade show py-3" id="registrasi-tab-pane" role="tabpanel" aria-labelledby="registrasi-tab" tabindex="0">
+                        <div class="container">
+                            <form action="" method="" novalidate>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="Username/NIK" required>
+                                    <label for="floatingInput">Username/NIK</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+                                    <label for="floatingPassword">Password</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="floatingNoHP" placeholder="No. HP" required>
+                                    <label for="floatingNoHP">No. HP</label>
+                                </div>
+                                <div class="text-center my-4">
+                                    <button type="submit" class="btn btn-primary">Registrasi</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    <div class="text-center my-4">
-                        <button type="submit" class="btn btn-primary">Masuk</button>
-                    </div>
-                    <div class="text-center">
-                        <a href="" style="color: #00957E;">Lupa Password</a>
-                    </div>
-                    <hr>
-                    <div class="text-center my-2">
-                        <p>Belum memiliki akun?</p>
-                    </div>
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-primary">Registrasi</button>
-                    </div>
-                </form>
+                </div>
             </div>
         </div>
     </div>

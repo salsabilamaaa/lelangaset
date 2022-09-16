@@ -29,6 +29,21 @@ body {
   background-color: rgba(0, 149, 126, 0.1);
 }
 
+.nav-pills .active{
+  font-weight: 600 !important;
+  background-color: #00957E !important;
+  color: white !important;
+}
+
+.nav-pills .nav-link{
+  color: #212529;
+}
+
+.nav-pills .nav-link:hover{
+  color: #212529;
+  background-color: rgba(0, 149, 126, 0.1);
+}
+
 .bg-nav-scroll {
   background-color: rgba(0, 149, 126, 0.9);
   backdrop-filter: blur(2px);
